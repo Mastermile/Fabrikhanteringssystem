@@ -40,33 +40,12 @@ class Program
 
     static void LäggTillProdukt()
     {
-        Console.Write("Ange produktens namn: ");
-        string produkt = Console.ReadLine();
 
-        if (!string.IsNullOrWhiteSpace(produkt))
-        {
-            inventory.Add(produkt);
-            Console.WriteLine($"Produkten \"{produkt}\" har lagts till.");
-        }
-        else
-        {
-            Console.WriteLine("Produktnamnet kan inte vara tomt.");
-        }
     }
 
     static void VisaInventarie()
     {
-        if (inventory.Count == 0)
-        {
-            Console.WriteLine("Inventarielistan är tom.");
-            return;
-        }
 
-        Console.WriteLine("\nInventarie:");
-        for (int i = 0; i < inventory.Count; i++)
-        {
-            Console.WriteLine($"{i + 1}. {inventory[i]}");
-        }
     }
 
     static void TaBortProdukt()
