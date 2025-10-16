@@ -38,6 +38,10 @@ class Program
     static void VisaInventarie()
     {
         // TODO: Implementera metod för att visa inventarie
+        for (int i = 0; i < inventory.Count; i++)
+        {
+            Console.WriteLine($"[{i+1}] {inventory[i]}");
+        }
     }
     static void TaBort()
     {
